@@ -1,0 +1,52 @@
+[
+    {
+        "title": "HACER 2025 Conference",
+        "date": "19-20 Dec. 2025",
+        "seats": 0,
+        "online": false,
+        "category": "Conference",
+        "description": "19-20 Dec. 2025 - IIITV successfully organized HACER 2025 conference at ICD Campus Diu.",
+        "image": "ICD.jpg",
+        "imageAlt": "ICD Campus event venue"
+    },
+    {
+        "title": "Rashtriya Karmayogi Workshop",
+        "date": "Not specified",
+        "seats": 3,
+        "online": false,
+        "category": "Workshop",
+        "description": "IIITV in collaboration with IIT Gandhinagar successfully organized the One-Day Workshop under Phase II of the Rashtriya Karmayogi Large-Scale Jan Seva Program.",
+        "image": "college.jpg",
+        "imageAlt": "College campus for an academic workshop"
+    },
+    {
+        "title": "7th Inter IIIT Sports Meet",
+        "date": "Not specified",
+        "seats": 12,
+        "online": false,
+        "category": "Sports",
+        "description": "Our students won Gold in Cricket, Silver in Table Tennis and Badminton, and Bronze in Carrom at the 7th Inter IIIT Sports Meet held at ABV IIITM Gwalior.",
+        "image": "DUMAND_CAMPUS.jpg",
+        "imageAlt": "Diu campus used for student activities"
+    },
+    {
+        "title": "Reduce E-Waste Recognition",
+        "date": "Not specified",
+        "seats": 4,
+        "online": false,
+        "category": "Innovation",
+        "description": "Our student, Mr. Satyam Aniyaliya secured 3rd place under the 'Reduce E-Waste' category in the Ideas4Life initiative by the Ministry of Environment, Forest & Climate Change. His idea (ID 1364) was recognized under Mission LiFE.",
+        "image": "GNC.jpg",
+        "imageAlt": "Gandhinagar campus for student innovation activities"
+    },
+    {
+        "title": "3-Day AI Accelerate Boot Camp",
+        "date": "Not specified",
+        "seats": 8,
+        "online": true,
+        "category": "Technology",
+        "description": "3-Day AI Accelerate Boot Camp for students interested in learning and exploring artificial intelligence.",
+        "image": "OIP.webp",
+        "imageAlt": "Campus activity representing an AI boot camp"
+    }
+]
