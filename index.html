@@ -30,7 +30,7 @@
         <!-- B2: Page grid area - navigation -->
         <nav class="main-nav" aria-label="Primary navigation">
             <div class="container nav-inner">
-                <button class="menu-toggle" type="button" aria-label="Open navigation menu">
+                <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
                     <span aria-hidden="true">&#9776;</span>
                     <span>Menu</span>
                 </button>
@@ -72,53 +72,18 @@
                         </blockquote>
                     </header>
 
-                    <!-- B3: Responsive event cards use auto-fit + minmax() -->
-                    <div class="event-grid">
-                        <article class="event-card">
-                            <img class="event-card__image" src="ICD.jpg" alt="ICD Campus event venue">
-                            <div class="event-card__body">
-                                <p class="event-card__tag">Conference</p>
-                                <h3>HACER 2025 Conference</h3>
-                                <p class="event-card__text">19-20 Dec. 2025 — IIITV successfully organized HACER 2025 conference at ICD Campus Diu.</p>
-                            </div>
-                        </article>
-
-                        <article class="event-card">
-                            <img class="event-card__image" src="college.jpg" alt="College campus for an academic workshop">
-                            <div class="event-card__body">
-                                <p class="event-card__tag">Workshop</p>
-                                <h3>Rashtriya Karmayogi Workshop</h3>
-                                <p class="event-card__text">IIITV in collaboration with IIT Gandhinagar successfully organized the One-Day Workshop under Phase II of the Rashtriya Karmayogi Large-Scale Jan Seva Program.</p>
-                            </div>
-                        </article>
-
-                        <article class="event-card">
-                            <img class="event-card__image" src="DUMAND_CAMPUS.jpg" alt="Diu campus used for student activities">
-                            <div class="event-card__body">
-                                <p class="event-card__tag">Sports</p>
-                                <h3>7th Inter IIIT Sports Meet</h3>
-                                <p class="event-card__text">Our students won Gold in Cricket, Silver in Table Tennis and Badminton, and Bronze in Carrom at the 7th Inter IIIT Sports Meet held at ABV IIITM Gwalior.</p>
-                            </div>
-                        </article>
-
-                        <article class="event-card">
-                            <img class="event-card__image" src="GNC.jpg" alt="Gandhinagar campus for student innovation activities">
-                            <div class="event-card__body">
-                                <p class="event-card__tag">Innovation</p>
-                                <h3>Reduce E-Waste Recognition</h3>
-                                <p class="event-card__text">Our student, Mr. Satyam Aniyaliya secured 3rd place under the ‘Reduce E-Waste’ category in the Ideas4Life initiative by the Ministry of Environment, Forest &amp; Climate Change. His idea (ID 1364) was recognized under Mission LiFE.</p>
-                            </div>
-                        </article>
-
-                        <article class="event-card">
-                            <img class="event-card__image" src="OIP.webp" alt="Campus activity representing an AI boot camp">
-                            <div class="event-card__body">
-                                <p class="event-card__tag">Technology</p>
-                                <h3>3-Day AI Accelerate Boot Camp</h3>
-                                <p class="event-card__text">3-Day AI Accelerate Boot Camp for students interested in learning and exploring artificial intelligence.</p>
-                            </div>
-                        </article>
+                    <!-- B6: Search events while typing; Escape clears the search. -->
+                    <div class="event-search-box">
+                        <label for="event-search">Search Events</label>
+                        <input type="search" id="event-search" placeholder="Search by event name or category..." autocomplete="off">
                     </div>
+
+                    <!-- B7: This message displays Loading, Success, and Error states. -->
+                    <p id="event-status" class="event-status" role="status" aria-live="polite">Loading events...</p>
+
+                    <!-- B2: JavaScript creates the event cards from events.json in this container. -->
+                    <div class="event-grid"></div>
+                    <p class="event-demo-note">Note: Seat counts and online availability are sample values for the Lab 6 demonstration.</p>
 
                     <section class="section-card event-links" aria-labelledby="quick-events-title">
                         <div class="section-heading compact-heading">
@@ -169,7 +134,7 @@
                             <p>Use the form below to practise the registration layout from the previous lab.</p>
                         </div>
 
-                        <form action="#" method="post">
+                        <form action="#" method="post" novalidate> <!-- B8: JavaScript checks validity with checkValidity(). -->
                             <div class="form-grid">
                                 <div class="form-field form-field--full">
                                     <label for="name">Full Name</label>
@@ -183,7 +148,7 @@
 
                                 <div class="form-field">
                                     <label for="mobile">Mobile Number</label>
-                                    <input type="tel" id="mobile" name="mobile" placeholder="Enter your number" autocomplete="tel" required>
+                                    <input type="tel" id="mobile" name="mobile" placeholder="Enter your 10-digit number" autocomplete="tel" pattern="[0-9]{10}" title="Enter a 10-digit mobile number." required> <!-- B8: pattern + required validation. -->
                                 </div>
 
                                 <div class="form-field">
@@ -231,6 +196,8 @@
                                 <input type="submit" value="Register">
                                 <input type="reset" value="Reset">
                             </div>
+                            <!-- B8: Display the form validation result. -->
+                            <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
                         </form>
                     </section>
 
@@ -301,6 +268,9 @@
         </footer>
 
     </div>
+
+    <!-- A1: Link the Lab 6 JavaScript file just before the closing body tag. -->
+    <script src="script.js" defer></script>
 </body>
 
 </html>
