@@ -85,7 +85,7 @@ Campus_Event_Board/
 
 ## Repository
 
-GitHub: https://github.com/chandrakant-123/Campus_Event_Board_IIITV
+GitHub: [https://github.com/chandrakant-123/Campus_Event_Board_IIITV](https://chandrakant-123.github.io/Campus_Event_Board_IIITV/)
 
 ---
 
