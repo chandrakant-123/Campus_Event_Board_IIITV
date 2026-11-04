@@ -1,125 +1,94 @@
 # Campus Event Board – IIIT Vadodara
 
-A modern, responsive **Campus Event Board** website built using **HTML5** and **CSS3**. The project showcases upcoming college events, event registration, campus galleries, and student information while following responsive design and accessibility principles.
+A simple and responsive web-based platform for displaying and exploring campus events at **Indian Institute of Information Technology Vadodara (IIITV)**.
 
-## Live Preview
-
-(Add your GitHub Pages link here after deployment.)
+The Campus Event Board helps students discover upcoming college events, search events by title or category, check event details, and interact with event cards through a user-friendly interface.
 
 ## Features
 
-* Responsive design (Mobile, Tablet, Desktop)
-* Modern UI with CSS Grid and Flexbox
-* Hero section with campus banner
-* Event cards with images and descriptions
-* Event registration form
-* Student information table
-* Campus photo gallery
-* Sticky navigation bar
-* Accessible design with Skip to Content link
-* W3C-friendly semantic HTML
+- **Event Listing:** Displays campus events in an organized card layout.
+- **Dynamic Event Loading:** Loads event information from a JSON file using JavaScript Fetch API.
+- **Search Events:** Search for events by title or category.
+- **Event Details:** Displays event information such as date, time, venue, category, and available seats.
+- **Seat Availability:** Shows the availability status of event seats.
+- **RSVP Interaction:** Provides a demo RSVP interaction for events.
+- **Login Page:** Includes a basic login interface.
+- **About Page:** Provides information about the project.
+- **Responsive Design:** Designed to work on different screen sizes.
+- **Dark Theme:** Includes dark theme styling.
 
 ## Technologies Used
 
-* HTML5
-* CSS3
-* CSS Grid
-* Flexbox
-* Responsive Media Queries
-* CSS Variables (`:root`)
+- HTML5 – Structure of web pages
+- CSS3 – Styling and responsive layout
+- JavaScript – Dynamic functionality and user interactions
+- JSON – Storage of event information
+- Fetch API – Loading event data asynchronously
+- Visual Studio Code – Development environment
 
 ## Project Structure
 
 ```text
-Campus-Event-Board/
-│── index.html
-│── style.css
-│── About.html
-│── Login.html
-│── campus.jpg
-│── GNC.jpg
-│── ICD.jpg
-│── DUMAND_CAMPUS.jpg
-│── college.jpg
-│── OIP.webp
-│── flag.png
-│── Websites.png
+Campus_Event_Board/
+│
+├── index.html
+├── script.js
+├── events.json
+│
+├── About.html
+├── About.css
+│
+├── Loggin.html
+├── login.css
+│
+├── theme-dark.css
+│
+└── images/
 ```
 
-## Website Sections
+*Note: The project structure above shows the main application files. Additional assets may also be present in the repository.*
 
-* **Home** – Hero banner introducing campus activities.
-* **Upcoming Events** – Conference, Workshop, Sports, Innovation, and AI Boot Camp.
-* **Quick Links** – College Fest, Tech Fest, Sports Day, Hackathon, and Seminar.
-* **Campus Gallery** – Images of IIIT Vadodara campuses.
-* **Registration Form** – Student event registration.
-* **Student Data Table** – Sample student information.
-* **Footer** – Contact details and useful links.
+## How to Run the Project
 
-## Responsive Design
+1. Download or clone this repository.
+2. Open the project folder in Visual Studio Code.
+3. Install the **Live Server** extension if it is not already installed.
+4. Open `index.html`.
+5. Right-click and select **Open with Live Server**.
+6. The project will open in your browser.
 
-The website follows a **mobile-first approach**.
+**Important:** Run the project using Live Server or another local HTTP server because the Fetch API is used to load `events.json`.
 
-| Screen Size | Layout                 |
-| ----------- | ---------------------- |
-| Mobile      | Single-column layout   |
-| Tablet      | Two-column forms       |
-| Desktop     | Main content + Sidebar |
+## How It Works
 
-## Accessibility Features
+1. The homepage displays the available campus events.
+2. JavaScript fetches event data from `events.json`.
+3. Event information is dynamically displayed on the webpage.
+4. Users can search for events using the search functionality.
+5. Users can view event information and try the demo RSVP interaction.
 
-* Semantic HTML elements
-* Skip navigation link
-* Alt text for images
-* Keyboard-friendly navigation
-* Proper heading hierarchy
-* Visible focus indicators
+## Project Limitations
 
-## Screenshots
-
-Add screenshots here after uploading them.
-
-Example:
-
-```markdown
-![Homepage](screenshots/home.png)
-![Events](screenshots/events.png)
-```
-
-## How to Run
-
-1. Clone the repository.
-
-```bash
-git clone https://github.com/your-username/Campus-Event-Board.git
-```
-
-2. Open the project folder.
-
-```bash
-cd Campus-Event-Board
-```
-
-3. Open `index.html` in your browser.
+- This project uses frontend technologies only.
+- Event information is stored in a JSON file.
+- No backend server or database is connected.
+- Login functionality is a frontend interface and does not provide real authentication.
+- RSVP interactions are for demonstration purposes and are not permanently stored.
 
 ## Future Improvements
 
-* JavaScript-powered mobile menu
-* Event search and filtering
-* Login authentication
-* Database integration with PHP & MySQL
-* Online event registration system
-* Admin dashboard for event management
+- Add backend and database integration.
+- Implement secure user authentication.
+- Store event registrations permanently.
+- Add an admin dashboard to manage events.
+- Send event notifications and registration confirmations.
 
-## Author
+## Repository
 
-**Chandrakant Hanvate**
+GitHub: https://github.com/chandrakant-123/Campus_Event_Board_IIITV
 
-* MCA Student
-* IIIT Vadodara
-* GitHub: https://github.com/your-username
+---
 
-## License
+**Campus Event Board – IIIT Vadodara**
 
-This project is created for educational purposes at **IIIT Vadodara**.
-
+A web development project built using HTML, CSS, JavaScript, and JSON.
