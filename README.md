@@ -96,7 +96,7 @@ The folder `Output Screenshort/LAB 5/` contains the earlier Lab 5 screenshots.
 
 GitHub repository:
 
-https://github.com/chandrakant-123/Campus_Event_Board_IIITV/
+https://github.com/chandrakant-123/Campus_Event_Board_IIITV
 
 The updated Lab 6 files in this project folder have not yet been pushed to the public repository. The team leader still needs to upload the updated `index.html`, `style.css`, `script.js`, `events.json`, and `README.md`, and commit the changes with a clear commit message. The repository should be checked after the upload to make sure all the files are there.
 
